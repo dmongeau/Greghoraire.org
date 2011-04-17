@@ -26,37 +26,19 @@ require PATH_ROOT.'/../Gregory/Gregory.php';
 
 $app = new Gregory($config);
 
-$app->addPlugin('db',array(
-	'adapter' => 'pdo_mysql',
-	'config' => array(
-		'host' => 'localhost',
-		'username' => 'test',
-		'password' => 'RvaEhpLXuzCA6QJj',
-		'dbname' => 'test'
-	)
-));
-
-$app->addPlugin('resizer/resizer.php',array(
-	'path' => dirname(__FILE__).'/statics/photos',
-	'cachePath' =>dirname(__FILE__).'/statics/photos/_cache'
-),false);
-
 
 $app->addRoute(array(
 	'/' => 'home.php',
-	'/about.html' => array(
-		'page' => 'about.php'
-	),
-	'/Gregory.php' => array(
-		'page' => 'gregory.php'
-	),
-	'/contact.html' => array(
-		'page' => 'contact.php'
+	'/ajouter.html' => array(
+		'page' => 'add/add.php'
 	),
 ));
 
 $app->addStylesheet('/statics/css/commons.css');
 $app->addStylesheet('/statics/css/styles.css');
+
+
+$app->addScript('https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js');
 
 $app->bootstrap();
 
