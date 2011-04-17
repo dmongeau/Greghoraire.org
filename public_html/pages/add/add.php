@@ -44,12 +44,21 @@ try {
 
 <form action="?" method="post">
 
-<p><label>Titre :</label><br/>
-<input type="text" name="title" /></p>
-
-<p><label>Description :</label><br/>
-<textarea name="content"></textarea></p>
-
-<p><button type="submit">Ajouter</button></p>
+    <div class="field">
+        <label>Titre :</label>
+        <div class="input"><input type="text" name="title" class="text title" /></div>
+    </div>
+    
+    <div class="field">
+        <label>Lieu :</label>
+        <div class="input"><input type="text" name="where" class="text" /></div>
+    </div>
+    
+    <div class="field">
+        <label>Description :</label>
+        <div class="input"><textarea name="content"></textarea></div>
+    </div>
+    
+    <p><button type="submit">Ajouter</button></p>
 
 </form>
