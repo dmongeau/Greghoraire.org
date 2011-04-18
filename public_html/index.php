@@ -34,13 +34,14 @@ $app->addRoute(array(
 	),
 ));
 
+$app->addStylesheet('/statics/css/jqueryui.css');
 $app->addStylesheet('/statics/css/commons.css');
 $app->addStylesheet('/statics/css/styles.css');
-$app->addStylesheet('/statics/css/jqueryui.css');
 
 
 $app->addScript('https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js');
 $app->addScript('/statics/js/jqueryui.js');
+$app->addScript('/statics/js/app.js');
 
 $app->bootstrap();
 

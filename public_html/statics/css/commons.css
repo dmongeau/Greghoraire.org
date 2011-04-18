@@ -5,6 +5,10 @@
  */
 * { margin:0; padding:0; border:none; outline:none; list-style:none; }
 p { margin:10px 0; }
+h1 { margin:10px 0 30px 0; }
+h2 { margin:10px 0 20px 0; }
+h3 { margin:10px 0 15px 0; }
+h4 { margin:5px 0 10px 0; }
 
 /*
  *
@@ -26,6 +30,33 @@ p { margin:10px 0; }
 
 /*
  *
+ * Messages
+ *
+ */
+.error, .success, .notice {
+	padding:10px;
+	font-size:14px;
+	margin:10px 0 20px 0;
+	background:#ddd;
+	border:solid 2px #ccc;
+	color:#000;
+}
+.error {
+	background:#C66;
+	border-color:#900;
+	color:#fff;
+}
+.success {
+	background:#6F9;
+	border-color:#090;
+}
+.notice {
+	background:#FFC;
+	border-color:#FC6;
+}
+
+/*
+ *
  * Forms
  *
  */
@@ -37,13 +68,20 @@ p { margin:10px 0; }
 	font-size:16px;	
 	margin:0;
 	margin-bottom:3px;
+	font-weight:bold;
 }
 .field input.text {
-	width:600px;
-	font-size:16px;
+	width:500px;
+	font-size:14px;
 	padding:2px;
 	border:solid 1px #ddd;
 	margin:0;
+	color:#333;
+}
+.field input.date {
+	width:100px;
+	background:url(/statics/icons/calendar_16.png) no-repeat 2px 2px;
+	padding-left:25px;
 }
 .field input.title {
 	font-size:24px;
@@ -53,12 +91,20 @@ p { margin:10px 0; }
 	margin-left:5px;
 }
 .field textarea {
-	width:600px;
+	width:500px;
 	height:150px;
 	font-size:16px;
 	padding:2px;
 	border:solid 1px #ddd;
 	margin:0;
+	color:#333;
+}
+.field select {
+	font-size:14px;
+	padding:1px;
+	border:solid 1px #ddd;
+	margin:0;
+	color:#333;
 }
 .field .note {
 	font-size:12px;
